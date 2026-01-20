@@ -1,7 +1,7 @@
 # RAG Chatbot using LangChain, OpenAI, Google AI & Hugging Face
 
 <div align="center">
-  <img src="https://github.com/AlaGrine/RAG_chatabot_with_Langchain/blob/main/data/docs/RAG_architecture.png">
+  <img src="https://github.com/bijarnialokesh/RAG-CHATBOT-WITH-LANGCHAIN/blob/main/data/docs/RAG_architecture.png">
   <figcaption>RAG architecture with LangChain components.</figcaption>
 </div>
 
