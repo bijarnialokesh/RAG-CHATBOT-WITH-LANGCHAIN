@@ -1,39 +1,50 @@
-# RAG chatbot powered by 🔗 Langchain, OpenAI, Google Generative AI and Hugging Face 🤗
+# RAG Chatbot using LangChain, OpenAI, Google AI & Hugging Face
 
 <div align="center">
-  <img src="https://github.com/AlaGrine/RAG_chatabot_with_Langchain/blob/main/data/docs/RAG_architecture.png" >
-  <figcaption>RAG architecture with Langchain components.</figcaption>
+  <img src="https://github.com/AlaGrine/RAG_chatabot_with_Langchain/blob/main/data/docs/RAG_architecture.png">
+  <figcaption>RAG architecture with LangChain components.</figcaption>
 </div>
 
-## Project Overview <a name="overview"></a>
+## 📌 Project Overview
 
-Although Large Language Models (LLMs) are powerful and capable of generating creative content, they can produce outdated or incorrect information as they are trained on static data. To overcome this limitation, Retrieval Augmented Generation (RAG) systems can be used to connect the LLM to external data and obtain more reliable answers.
+Large Language Models (LLMs) are powerful, but they rely on static training data.  
+This means they can produce **outdated or incorrect answers**.
 
-The aim of this project is to build a RAG chatbot in Langchain powered by [OpenAI](https://platform.openai.com/overview), [Google Generative AI](https://ai.google.dev/?hl=en) and [Hugging Face](https://huggingface.co/) **APIs**. You can upload documents in txt, pdf, CSV, or docx formats and chat with your data. Relevant documents will be retrieved and sent to the LLM along with your follow-up questions for accurate answers.
+To solve this, we use **Retrieval Augmented Generation (RAG)**.
 
-Throughout this project, we examined each component of the RAG system from document loader to conversational retrieval chain. Additionally, we developed a user interface using [streamlit](https://streamlit.io/) application.
+This project builds a **RAG-powered chatbot** using:
 
-## Installation <a name="installation"></a>
+- LangChain  
+- OpenAI  
+- Google Generative AI  
+- Hugging Face  
 
-This project requires Python 3 and the following Python libraries installed:
+You can upload documents in the following formats:
 
-`langchain` ,`langchain-openai`, `langchain-google-genai`, `chromadb`, `streamlit`, `streamlit`
+- `.txt`
+- `.pdf`
+- `.csv`
+- `.docx`
 
-The full list of requirements can be found in `requirements.txt`
+Then you can **chat with your own data**.  
+The system retrieves the most relevant parts of your documents and sends them to the AI model to generate **accurate, context-aware answers**.
 
-## Instructions <a name="instructions"></a>
+A simple **Streamlit web app** is used as the user interface.
 
-To run the app locally:
+---
 
-1. Create a virtual environment: `python -m venv langchain_env`
-2. Activate the virtual environment : `.\langchainenv\Scripts\activate` on Windows.
-3. Run the following command in the directory: `cd RAG_Chatabot_Langchain`
-4. Install the required dependencies `pip install -r requirements.txt`
-5. Start the app: `streamlit run RAG_app.py`
-6. In the sidebar, select the LLM provider (OpenAI, Google Generative AI or HuggingFace), choose an LLM (GPT-3.5, GPT-4, Gemini-pro or Mistral-7B-Instruct-v0.2), adjust its parameters, and insert your API keys.
-7. Create or load a Chroma vectorstore.
-8. Chat with your documents: ask questions and get 🤖 AI answers.
+## 🧱 How It Works
 
-## Blog post <a name="blog_post"></a>
+1. Load documents  
+2. Split them into chunks  
+3. Convert them into embeddings  
+4. Store them in a Chroma vector database  
+5. Retrieve relevant content for each query  
+6. Send it to the LLM for precise answers  
 
-I wrote a blog post about this project. You can find it [here](https://medium.com/@alaeddine.grine/rag-chatbot-powered-by-langchain-openai-google-generative-ai-and-hugging-face-apis-6a9b9d7d59db)
+---
+
+## ⚙️ Requirements
+
+- Python 3.x  
+- Required libraries:
